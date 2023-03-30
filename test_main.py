@@ -23,3 +23,10 @@ def test_get_area():
 
 def test_get_population():
     assert get_population(test_data[0]) == 12849
+
+
+def test_area_sort():
+    sorted_data = area_sort(test_data)
+    assert sorted_data[0][0] == 'ukraine'
+    assert sorted_data[1][0] == 'germany'
+    assert sorted_data[2][0] == 'usa'
