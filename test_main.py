@@ -30,3 +30,10 @@ def test_area_sort():
     assert sorted_data[0][0] == 'ukraine'
     assert sorted_data[1][0] == 'germany'
     assert sorted_data[2][0] == 'usa'
+
+
+def test_population_sort():
+    sorted_data = population_sort(test_data)
+    assert sorted_data[0][0] == 'germany'
+    assert sorted_data[1][0] == 'usa'
+    assert sorted_data[2][0] == 'ukraine'
