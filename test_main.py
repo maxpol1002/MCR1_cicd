@@ -19,3 +19,7 @@ def test_get_data():
 
 def test_get_area():
     assert get_area(test_data[0]) == 1000
+
+
+def test_get_population():
+    assert get_population(test_data[0]) == 12849
