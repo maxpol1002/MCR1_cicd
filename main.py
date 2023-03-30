@@ -27,6 +27,14 @@ def print_data(data):
         print(country)
 
 
+def main():
+    print_data(area_sort(get_data("population.txt")))
+    print_data(population_sort(get_data("population.txt")))
+
+
+if __name__ == '__main__':
+    main()
+
 
 
 
