@@ -22,6 +22,11 @@ def population_sort(data):
     return sorted_by_population
 
 
+def print_data(data):
+    for country in data:
+        print(country)
+
+
 
 
 
