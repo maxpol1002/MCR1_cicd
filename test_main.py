@@ -37,3 +37,14 @@ def test_population_sort():
     assert sorted_data[0][0] == 'germany'
     assert sorted_data[1][0] == 'usa'
     assert sorted_data[2][0] == 'ukraine'
+
+
+@pytest.mark.parametrize('country, expected_area', [
+    (['usa', '1000', '12849'], 1000),
+    (['ukraine', '18472', '12345'], 18472),
+    (['germany', '12345', '28367'], 12345)
+])
+def test_get_area(country, expected_area):
+    assert get_area(country) == expected_area
+
+
