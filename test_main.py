@@ -2,7 +2,6 @@ import pytest
 from main import get_data, get_area, get_population, area_sort, population_sort
 
 
-
 test_data = [
     ['usa', '1000', '12849'],
     ['ukraine', '18472', '12345'],
@@ -16,3 +15,7 @@ def test_get_data():
             f.write(','.join(line) + '\n')
 
     assert get_data('population.txt') == test_data
+
+
+def test_get_area():
+    assert get_area(test_data[0]) == 1000
